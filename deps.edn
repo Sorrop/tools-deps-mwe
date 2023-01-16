@@ -3,8 +3,8 @@
  :aliases
  {:build
   {:deps
-   {io.github.clojure/tools.build {:git/tag "v0.9.1" :git/sha "27ff8a4"}}}
-  :ns-default build}
+   {io.github.clojure/tools.build {:git/tag "v0.9.1" :git/sha "27ff8a4"}}
+   :ns-default build}}
 
  :deps
  {org.clojure/clojure {:mvn/version "1.11.0"}

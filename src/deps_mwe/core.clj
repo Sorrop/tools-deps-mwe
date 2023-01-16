@@ -1,4 +1,4 @@
-(ns core
+(ns deps-mwe.core
   (:require [clj-http.client :as http]
             [jsonista.core :as json]
             [clojure.pprint :as pretty]
@@ -10,7 +10,7 @@
   json/keyword-keys-object-mapper)
 
 
-(defn -main [opts]
+(defn -main [& opts]
   (let [resp (-> (http/get "https://api.exchangerate.host/latest")
                  :body)
         data (json/read-value resp obj-mapper)]
