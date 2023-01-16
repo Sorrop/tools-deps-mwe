@@ -1,0 +1,12 @@
+{:paths ["src"]
+
+ :aliases
+ {:build
+  {:deps
+   {io.github.clojure/tools.build {:git/tag "v0.9.1" :git/sha "27ff8a4"}}}
+  :ns-default build}
+
+ :deps
+ {org.clojure/clojure {:mvn/version "1.11.0"}
+  clj-http/clj-http {:mvn/version "3.12.3"}
+  metosin/jsonista  {:mvn/version "0.3.3"}}}
