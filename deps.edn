@@ -3,10 +3,13 @@
  :aliases
  {:build
   {:deps
-   {io.github.clojure/tools.build {:git/tag "v0.9.1" :git/sha "27ff8a4"}}
+   {io.github.clojure/tools.build {:git/tag "v0.9.1" :git/sha "27ff8a4"}
+    nrepl/nrepl                   {:mvn/version "0.6.0"}
+    refactor-nrepl/refactor-nrepl {:mvn/version "2.5.0"}
+    cider/cider-nrepl             {:mvn/version "0.25.3"}}
    :ns-default build}}
 
  :deps
  {org.clojure/clojure {:mvn/version "1.11.0"}
-  clj-http/clj-http {:mvn/version "3.12.3"}
-  metosin/jsonista  {:mvn/version "0.3.3"}}}
+  clj-http/clj-http   {:mvn/version "3.12.3"}
+  metosin/jsonista    {:mvn/version "0.3.3"}}}
